@@ -1,0 +1,133 @@
+/* Model type */
+/* model_type == 0 --> using drug concentration */
+/* model_type == 1 --> using block rate  */
+1
+
+/* Drug type */
+/* drug_type == 0 --> without facilitation */
+/* drug_type == 1 --> with facilitation  */
+1
+
+/* cell type */
+/* celltype == 0 --> Endo */
+/* celltype == 1 --> Mid */
+/* celltype == 2 --> Epi */
+2
+
+/* Base cycel length */
+1000
+//2000
+//4000
+
+/* ndis */
+//0.002           // for 1ms pulse width with BCL500
+//0.001         // for 1ms pulse width with BCL1000
+0.0005         // for 0.5ms pulse width with BCL1000
+//0.0005        // for 1ms pulse width with BCL2000
+//0.00025        // for 0.5ms pulse width with BCL2000
+
+/* Istim */
+-60.0	
+
+/* Gks Block rate */
+0.5
+
+/* IK1 Block rate */
+1.0
+
+/* Block rate */
+1.0
+
+/* drug concentration */
+//0.0E-9        //0%Ikr inhibition
+100.0E-9                // ~50%Ikr inhibition
+//1000.0E-9             // ~50%Ikr inhibition
+
+/* block parameters */
+/* IC50 (nM), hill coefficent */
+145.0E-9        1.15
+
+/* fraction parameters */
+/* EC50 (nM), fhill coefficent */
+92.8E-9       1.50
+
+/* number of datas */
+1
+
+/* line width */
+2
+
+/* x1, y1 */
+//-88.654973		// Vm  = x[0]
+//0.000838		// m   = x[1]
+//0.993336		// h   = x[2]
+//0.995484		// j   = x[3]
+//0.000003		// d   = x[4]
+//0.999745		// f   = x[5]
+//0.000994		// b   = x[6]
+//0.994041		// g   = x[7]
+//0.000129		// xr  = x[8]
+//0.004503		// xs1 = x[9]
+//0.004503		// xs2 = x[10]
+//0.0120892		// zdv = x[11]
+//0.999978		// ydv = x[12]
+//12.236437		// Initial Intracellular Na (mM) = x[13]
+//136.89149		// Initial Intracellular K (mM)  = x[14]
+//0.000079		// Initial Intracellular Ca (mM) = x[15]
+//1.179991		// [Ca]_NSR = x[16]
+//1.179991		// [Ca]_JSR = x[17]
+//140.0000		// Initial Bulk Medium [Na] (mM) = x[18]
+//4.500000		// Initial Bulk Medium [K]  (mM) = x[19]
+//1.800000		// Initial Bulk Medium [Ca] (mM) = x[20]
+//0.000129		// facilitation variable xr2  = x[21]
+-8.423611910063721e+01
+1.754865658188300e-03
+9.821017302850165e-01
+9.887745103764618e-01
+6.812735809817559e-06
+9.992676584033374e-01
+1.496851868679413e-03
+9.867947951181817e-01
+2.334241160565130e-04
+6.846545484333122e-03
+3.792453137184539e-02
+1.534801081399622e-02
+9.999456025875508e-01
+8.546132247275422e+00
+1.366178033651895e+02
+6.622852512028904e-05
+1.101810376665210e+00
+7.851252700766609e-01
+1.400023381282871e+02
+5.363247839137739e+00
+1.819058736436284e+00
+7.930412962555217e-03
+
+
+/* direction of time */
+1
+/* end time. 0.0 = nolimit of integration */ 
+0
+
+/* dIstim */
+0.1
+
+1		/* number of period */
+200		/* strip for integral */
+0		/* poincare flag 0 --- poincare/1 --- orbit */
+0		/* write file 0 --- not write/1 --- write */
+0		/* write flag 0 --- poincare/1 --- orbit */
+0		/* if 1 then period is PI*/
+0		/* data output swithc; if 1 then data out*/
+1		/* screen output swithc; if 1 then data out*/
+0		/* current data output; if 1 then data out*/
+0		/* if 1 then debug */
+
+100 600 100 600     /* graph location */
+-100 60 -0.1 1.1		/* scaling */
+30 0.3 1 1			/* label strip & interval */
+1 1			/* floating point */
+1			/* axis/grid */
+-sony-fixed-medium-r-normal--24-170-100-100-c-120-iso8859-1 /* font */
+-212 -460 -40 -288	/* arrow */
+1	/* command */
